@@ -16,16 +16,12 @@ export default function Page() {
             <Text>{pkg.version}</Text>
             <Text $ref="lcui_version" />
           </div>
-          <Text>{pkg.description}</Text>
         </div>
         <Link className={styles.item} href={pkg.homepage}>
-          <Text>Visit homepage</Text>
+          <Text>华梦官网</Text>
           <ArrowRight />
         </Link>
-        <Link className={styles.item} href={pkg.bugs.url}>
-          <Text>Report an issue</Text>
-          <ArrowRight />
-        </Link>
+       
       </div>
     </div>
   );

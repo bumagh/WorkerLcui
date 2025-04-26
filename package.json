@@ -1,5 +1,5 @@
 {
-  "name": "lcui-quick-start",
+  "name": "沃客工作台",
   "version": "0.2.0",
   "description": "A minimal LCUI application",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/lcui-dev/lcui-quick-start.git"
   },
-  "homepage": "https://github.com/lcui-dev/lcui-quick-start",
+  "homepage": "https://hmx.asia",
   "bugs": {
     "url": "https://github.com/lcui-dev/lcui-quick-start/issues"
   },

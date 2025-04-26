@@ -2,25 +2,18 @@
 #include <ui.h>
 #include "styles.module.scss.h"
 
-// UTF-8 encoded string from: lcui-quick-start
-static const unsigned char widget_text_0[] = {0x6c, 0x63, 0x75, 0x69, 0x2d, 0x71, 0x75, 0x69, 0x63, 0x6b, 0x2d, 0x73, 0x74, 0x61, 0x72, 0x74, 0};
+// UTF-8 encoded string from: %E6%B2%83%E5%AE%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0
+static const unsigned char widget_text_0[] = {0xe6, 0xb2, 0x83, 0xe5, 0xae, 0xa2, 0xe5, 0xb7, 0xa5, 0xe4, 0xbd, 0x9c, 0xe5, 0x8f, 0xb0, 0};
 // UTF-8 encoded string from: 0.2.0
 static const unsigned char widget_text_1[] = {0x30, 0x2e, 0x32, 0x2e, 0x30, 0};
-// UTF-8 encoded string from: A%20minimal%20LCUI%20application
-static const unsigned char widget_text_2[] = {0x41, 0x20, 0x6d, 0x69, 0x6e, 0x69, 0x6d, 0x61, 0x6c, 0x20, 0x4c, 0x43, 0x55, 0x49, 0x20, 0x61, 0x70, 0x70, 0x6c, 0x69, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0};
-// UTF-8 encoded string from: Visit%20homepage
-static const unsigned char widget_text_3[] = {0x56, 0x69, 0x73, 0x69, 0x74, 0x20, 0x68, 0x6f, 0x6d, 0x65, 0x70, 0x61, 0x67, 0x65, 0};
+// UTF-8 encoded string from: %E5%8D%8E%E6%A2%A6%E5%AE%98%E7%BD%91
+static const unsigned char widget_text_2[] = {0xe5, 0x8d, 0x8e, 0xe6, 0xa2, 0xa6, 0xe5, 0xae, 0x98, 0xe7, 0xbd, 0x91, 0};
 // UTF-8 encoded string from: %EE%83%AA
-static const unsigned char widget_text_4[] = {0xee, 0x83, 0xaa, 0};
-// UTF-8 encoded string from: Report%20an%20issue
-static const unsigned char widget_text_5[] = {0x52, 0x65, 0x70, 0x6f, 0x72, 0x74, 0x20, 0x61, 0x6e, 0x20, 0x69, 0x73, 0x73, 0x75, 0x65, 0};
-// UTF-8 encoded string from: %EE%83%AA
-static const unsigned char widget_text_6[] = {0xee, 0x83, 0xaa, 0};
+static const unsigned char widget_text_3[] = {0xee, 0x83, 0xaa, 0};
 
 typedef struct {
         ui_widget_t *lcui_version;
         ui_widget_t *ref_1;
-        ui_widget_t *ref_2;
 } about_page_refs_t;
 
 typedef struct about_page_react_state {
@@ -41,7 +34,7 @@ static void about_page_init_prototype(void)
 
 static void about_page_load_template(ui_widget_t *parent, about_page_refs_t *refs)
 {
-        ui_widget_t *w[12];
+        ui_widget_t *w[9];
 
         ui_widget_add_class(parent, "container");
         w[0] = ui_create_widget(NULL);
@@ -64,34 +57,20 @@ static void about_page_load_template(ui_widget_t *parent, about_page_refs_t *ref
         refs->lcui_version = ui_create_widget("text");
         ui_widget_append(w[5], w[6]);
         ui_widget_append(w[5], refs->lcui_version);
-        w[7] = ui_create_widget("text");
-        ui_widget_set_text(w[7], (const char*)widget_text_2);
         ui_widget_append(w[4], w[5]);
-        ui_widget_append(w[4], w[7]);
-        w[8] = ui_create_widget("a");
-        ui_widget_add_class(w[8], "_item_1hw5p_8");
-        ui_widget_set_attr(w[8], "href", "https://github.com/lcui-dev/lcui-quick-start");
-        w[9] = ui_create_widget("text");
-        ui_widget_set_text(w[9], (const char*)widget_text_3);
+        w[7] = ui_create_widget("a");
+        ui_widget_add_class(w[7], "_item_1hw5p_8");
+        ui_widget_set_attr(w[7], "href", "https://hmx.asia");
+        w[8] = ui_create_widget("text");
+        ui_widget_set_text(w[8], (const char*)widget_text_2);
         refs->ref_1 = ui_create_widget("text");
         ui_widget_add_class(refs->ref_1, "fui-icon-regular");
-        ui_widget_set_text(refs->ref_1, (const char*)widget_text_4);
-        ui_widget_append(w[8], w[9]);
-        ui_widget_append(w[8], refs->ref_1);
-        w[10] = ui_create_widget("a");
-        ui_widget_add_class(w[10], "_item_1hw5p_8");
-        ui_widget_set_attr(w[10], "href", "https://github.com/lcui-dev/lcui-quick-start/issues");
-        w[11] = ui_create_widget("text");
-        ui_widget_set_text(w[11], (const char*)widget_text_5);
-        refs->ref_2 = ui_create_widget("text");
-        ui_widget_add_class(refs->ref_2, "fui-icon-regular");
-        ui_widget_set_text(refs->ref_2, (const char*)widget_text_6);
-        ui_widget_append(w[10], w[11]);
-        ui_widget_append(w[10], refs->ref_2);
+        ui_widget_set_text(refs->ref_1, (const char*)widget_text_3);
+        ui_widget_append(w[7], w[8]);
+        ui_widget_append(w[7], refs->ref_1);
         ui_widget_append(w[0], w[1]);
         ui_widget_append(w[0], w[4]);
-        ui_widget_append(w[0], w[8]);
-        ui_widget_append(w[0], w[10]);
+        ui_widget_append(w[0], w[7]);
         ui_widget_append(parent, w[0]);
 }
 

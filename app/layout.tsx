@@ -5,11 +5,11 @@ import './global.css';
 export default function RootLayout({ children }: PropsWithChildren) {
   const tabs = [
     {
-      label: "Home",
+      label: "工作台",
       to: "/",
     },
     {
-      label: "About",
+      label: "关于",
       to: "/about",
     },
   ];

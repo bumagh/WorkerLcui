@@ -3,10 +3,10 @@
 #include "../vendor.node_modules/@lcui/react-icons/dist/style.css.h"
 #include "global.css.h"
 
-// UTF-8 encoded string from: Home
-static const unsigned char widget_text_0[] = {0x48, 0x6f, 0x6d, 0x65, 0};
-// UTF-8 encoded string from: About
-static const unsigned char widget_text_1[] = {0x41, 0x62, 0x6f, 0x75, 0x74, 0};
+// UTF-8 encoded string from: %E5%B7%A5%E4%BD%9C%E5%8F%B0
+static const unsigned char widget_text_0[] = {0xe5, 0xb7, 0xa5, 0xe4, 0xbd, 0x9c, 0xe5, 0x8f, 0xb0, 0};
+// UTF-8 encoded string from: %E5%85%B3%E4%BA%8E
+static const unsigned char widget_text_1[] = {0xe5, 0x85, 0xb3, 0xe4, 0xba, 0x8e, 0};
 
 typedef struct root_layout_react_state {
         char empty;
